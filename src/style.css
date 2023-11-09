@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.wrapper {
+  @apply flex flex-col items-center w-[min(100%,40rem)] bg-white p-5 rounded-3xl [&>*+*]:mt-3;
+}
+
+.author {
+  @apply self-end text-xl text-neutral-400 italic;
+}
+
+.button {
+  @apply bg-fuchsia-300 py-2 px-4 rounded-lg text-lg;
+}
